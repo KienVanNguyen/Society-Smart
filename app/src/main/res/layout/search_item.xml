@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/bogoc"
+    android:backgroundTint="?attr/backgroundcolor"
+    android:paddingTop="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/img_search"
+        android:src="@mipmap/ic_launcher_round"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp"
+        android:layout_toRightOf="@+id/img_search"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:maxLines="1"
+            android:layout_marginStart="5dp"
+            android:id="@+id/txt_searchuser"
+            android:textColor="?attr/textcolor"
+            android:text="Username"
+            />
+        <TextView
+            android:id="@+id/txt_searchfullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="full name"
+            android:layout_marginStart="5dp"
+            android:maxLines="1"
+            android:textColor="?attr/textcolor"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="5dp"
+        android:text="follow"
+        android:background="#0033FF"
+        android:textColor="?attr/textcolor"
+        android:id="@+id/btn_search"
+        />
+
+
+</RelativeLayout>
